@@ -1,56 +1,54 @@
 <template>
   <div id="app">
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-    </el-container>
-    <el-checkbox-group v-model="checkList">
-      <el-checkbox label="复选框 A"></el-checkbox>
-      <el-checkbox label="复选框 B"></el-checkbox>
-      <el-checkbox label="复选框 C"></el-checkbox>
-      <el-checkbox label="禁用" disabled></el-checkbox>
-      <el-checkbox label="选中且禁用" disabled></el-checkbox>
-    </el-checkbox-group>
-    <el-button>haha</el-button>
+    <!-- <img src="http://vuejs.org/images/logo.png"> -->
+    <img src="./assets/images/logo.png">
+    <h1>{{ msg }}</h1>
+    <h2>Essential Links</h2>
+    <el-button type="primary">主要按钮</el-button>
   </div>
 </template>
 
 <script>
 export default {
-  data(){
+  name: '#app',
+  data () {
     return {
-      checkList: ["选中且禁用", "复选框 A"]
+      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
 </script>
 
-<style>
-body {
-    width: 500px;
-    background-color: red;
-}
-
+<style scoped>
 #app {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-}
-.el-header, .el-footer {
-  background-color: #D3DCE6;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 
-.el-main {
-  background-color: #E9EEF3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
+img {
+  width: 200px;
+  height: 200px;
 }
 
-body > .el-container {
-  margin-bottom: 40px;
+h1, h2 {
+  font-weight: normal;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
 </style>
