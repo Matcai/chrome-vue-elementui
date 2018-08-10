@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "version":"1.0",
+    "name":"测试",
+    "description":"",
+    "icons": {
+       "128": "/static/images/icon128.png",
+       "16": "/static/images/icon16.png",
+       "48": "/static/images/icon48.png"
+    },
+    "browser_action":{
+       "default_icon": {
+          "19": "/static/images/icon16.png",
+           "38": "/static/images/icon48.png"
+          },
+       "default_title": "测试使用",
+       "default_popup": "index.html"
+    }
+
+}
